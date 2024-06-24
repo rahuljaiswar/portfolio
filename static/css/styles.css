@@ -1,0 +1,385 @@
+/* General Styles */
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    overflow-x: hidden;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+  }
+
+  
+  .profile-section {
+    display: flex;
+    align-items: center;
+    height: 32vh;
+    padding: 20px;
+  }
+  
+  .profile-header {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #ddd;
+    padding: 5px;
+  }
+  
+  /* Disable right-click on images */
+  img {
+    -webkit-user-drag: none;
+    user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+  }
+  .flag {
+    width: 1.5rem;
+  }
+  
+  .social-icons{
+    margin: 0.5rem 0 0 0.5rem;
+
+  }
+  .social-icons a {
+    margin: 1rem 10px;
+    font-size: 1.5rem;
+    color: #000;
+  }
+  
+  h6{
+    margin: 0.5rem 0 0 0.5rem;
+  }
+
+.skills span {
+    margin: 0 1rem 0 -0.5rem;
+    padding: 5px 10px;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+}
+.LinkedIn_Banner{
+    height: 50vh;
+    width: 100%;
+    padding: 5px;
+} 
+.tabs{
+  margin-top:8rem;
+  padding: 10px;
+}
+
+.nav-tabs .nav-item {
+  margin-right: 20vh;
+}
+
+.nav-tabs {
+  border-bottom: none;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-tabs .nav-item {
+  margin-bottom: 0;
+}
+.nav-tabs .nav-link {
+  border: none;
+  background: none;
+  color: #6c757d;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.nav-tabs .nav-link.active {
+  background-color: #f5f5f5;
+  color: #007bff;
+}
+.tab-content > .tab-pane {
+  padding: 20px;
+}
+.tab-content {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.image-section {
+  flex: 0 0 40%;
+  max-width: 40%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  flex: 0 0 55%;
+  max-width: 55%;
+  box-sizing: border-box;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+}
+
+.article p {
+  margin-top: 20px;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.button a {
+  text-decoration: none;
+  padding: 8px 25px;
+  background-color: #007bff;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+}
+
+/* Add this CSS to your stylesheet */
+
+.project-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.project-card .card-img-top {
+  border-bottom: 1px solid #ddd;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-card .card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.project-card .card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.project-card .card-subtitle {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+
+#skills {
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+#skills .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.skill-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.skill-card .icon {
+  color: #007bff;
+}
+
+.skill-card .card-body {
+  padding: 20px;
+}
+
+.skill-card .card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 15px;
+}
+
+.skill-card .card-text {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+
+#certificates {
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+#certificates .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.certificate-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.certificate-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.certificate-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.certificate-card .card-body {
+  padding: 20px;
+}
+
+.certificate-card .card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 15px;
+}
+
+.certificate-card .card-text {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+.certificate-card .btn {
+  margin-top: 15px;
+}
+
+
+/* Mobile Responsive Design */
+@media (max-width: 767px) {
+  .profile-section {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+  }
+
+  .profile-header {
+    text-align: center;
+    margin-top: -4.4rem;
+    margin-bottom: -2rem;
+  }
+
+  .profile-img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  .flag {
+    width: 1rem;
+  }
+
+  .social-icons a {
+    font-size: 1.2rem;
+  }
+
+  .LinkedIn_Banner {
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+
+  .tabs {
+    margin-top: 2rem;
+    padding: 5px;
+  }
+
+  .nav-tabs {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-tabs .nav-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .nav-tabs .nav-link {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .tab-content > .tab-pane {
+    padding: 15px;
+  }
+
+  .section {
+    flex-direction: column;
+  }
+
+  .image-section {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .article p {
+    font-size: 15px;
+  }
+
+  .button a {
+    padding: 6px 20px;
+    font-size: 16px;
+  }
+
+  #projects .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #certificates .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
