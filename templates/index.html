@@ -2,8 +2,12 @@
 
 {% block content %}
 <div class="header-section">
-    <img src="{{ url_for('static', filename='images/LinkedIn_Banner.png') }}" alt="Header Image" class="img-fluid LinkedIn_Banner">
-  </div>
+  <video autoplay muted playsinline class="img-fluid LinkedIn_Banner">
+      <source src="{{ url_for('static', filename='videos/LinkedIn_Video.mp4') }}" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+</div>
+
 <div class="profile-section">
   <div class="profile-header">
     <img src="{{ url_for('static', filename='images/boy.png') }}" alt="Profile Image" class="img-fluid rounded-circle profile-img">
