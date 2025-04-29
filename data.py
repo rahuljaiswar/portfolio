@@ -32,7 +32,7 @@ projects = [
         "tools": ["Power BI", "Python"],
         "description": "Built interactive dashboard for platforms like Blinkit, JioMart, and Swiggy Instamart. Integrated Python word cloud and custom filtering with bookmarks.",
         "link": "https://github.com/rahuljaiswar/ecom-dash",
-        "image": "pbi.png"
+        "image": "PBI.png"
     }
 ,
     {
@@ -48,7 +48,7 @@ projects = [
         'tools': ['Power BI'], 
         'description': 'Designed a Power BI Financial Reports dashboard to understand goods sales and display trends for informed decision-making.', 
         'link': 'https://github.com/rahuljaiswar/Power_bi_financial_dashboard',
-        "image": "pbi.png"
+        "image": "PBI.png"
     },
         
     {
