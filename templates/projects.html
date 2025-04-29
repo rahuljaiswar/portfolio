@@ -1,55 +1,26 @@
-<section id="projects" class="my-5" data-aos="fade-up">
-    <div class="row">
-        <div class="col-md-4 mb-4">
-            <div class="card project-card">
-                <img src="{{ url_for('static', filename='images/amz.png') }}" alt="Project 1" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">Amazon Sales Data Analysis</h5>
-                    <p class="card-text">
-                        Identified key trends and business improvement areas.<br> Created visualizations with matplotlib and seaborn to support data-driven decisions.
-                    </p>
-                    <p class="card-text"><strong>Tools:</strong> Python, pandas, matplotlib, seaborn.</p>
-                    <a href="https://colab.research.google.com/drive/1T2Y7lEeiH7TAwjhKcvsW9weeF2Q_bAgr?usp=sharing" class="btn btn-primary" target="_blank">View Project</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-4">
-            <div class="card project-card">
-                <img src="{{ url_for('static', filename='images/eda.jpg') }}" alt="Project 2" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">EDA on Diwali Sales</h5>
-                    <p class="card-text">
-                        Conducted EDA on Diwali sales data to Identified trends and patterns in Diwali sales data through statistical methods and data visualization.</p>
-                    <p class="card-text"><strong>Tools:</strong> Python, Pandas, NumPy, Matplotlib, Seaborn.</p>
-                    <a href="https://colab.research.google.com/drive/1mjuCz6xtx3F9o3RlUUUIBiiQimzdKf8E?usp=sharing" class="btn btn-primary" target="_blank">View Project</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-4">
-            <div class="card project-card">
-                <img src="{{ url_for('static', filename='images/PBI.png') }}" alt="Project 3" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">Power BI Project (Financial Reports)</h5>
-                    <p class="card-text">
-                        Designed a Power BI Financial Reports to understand goods sales. Created an effective dashboard to display sales trends for informed decision-making.
-                    </p>
-                    <p class="card-text"><strong>Tools:</strong> Power BI.</p>
-                    <a href="https://github.com/rahuljaiswar/Power_bi_financial_dashboard" class="btn btn-primary" target="_blank">View Project</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-4">
-            <div class="card project-card">
-                <img src="{{ url_for('static', filename='images/painter.png') }}" alt="Project 3" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">A Painter Portfolio</h5>
-                    <p class="card-text">
-                        Designed a Portfolio website for Painter.
-                    </p>
-                    <p class="card-text"><strong>Tools:</strong> HTML, CSS, JS & Bootstrap.</p>
-                    <a href="https://rahuljaiswar.github.io/ajay/" class="btn btn-primary" target="_blank">Visit Site</a>
-                </div>
-            </div>
-        </div>
+<div class="row mt-4">
+  {% for project in projects %}
+  <div class="col-md-4 mb-4" data-aos="zoom-in">
+    <div class="card project-card h-100">
+      <br /><br />
+      <img
+        src="{{ url_for('static', filename='images/' + project.image) }}"
+        alt="{{ project.name }}"
+        class="card-img-top img-fluid"
+        style="object-fit: contain; height: 250px; width: 100%"
+      />
+
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title">{{ project.title }}</h5>
+        <p class="card-text">{{ project.description }}</p>
+        <p class="card-text">
+          <strong>Tools:</strong> {{ project.tools | join(', ') }}
+        </p>
+        <a href="{{ project.link }}" class="btn btn-primary" target="_blank"
+          >View Project</a
+        >
+      </div>
     </div>
-</section>
+  </div>
+  {% endfor %}
+</div>

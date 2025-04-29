@@ -67,7 +67,6 @@
 }
 .LinkedIn_Banner{
   width: 100%;
-  max-width: 1350px; 
   height: auto; 
   display: block;
   margin: 0 auto; 
@@ -117,6 +116,15 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.badge {
+  transition: all 0.2s ease;
+}
+.badge:hover {
+  background-color: #0d6efd !important;
+  color: #fff !important;
+  transform: scale(1.05);
 }
 
 .image-section {
